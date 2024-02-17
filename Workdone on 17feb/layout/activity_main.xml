@@ -1,150 +1,871 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/cream" tools:context=".MainActivity" android:orientation="vertical">
-<View android:layout_width="match_parent" android:layout_height="10dp" android:background="@color/l_blue"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="50dp" android:background="@color/l_blue">
-<ImageView android:id="@+id/logo" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/logo" android:background="@drawable/logo_g" android:layout_alignParentStart="true" android:layout_marginStart="30dp" android:layout_centerVertical="true"/>
-<!-- Title  -->
-<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:fontFamily="@font/short_baby" android:textSize="21sp" android:textColor="@color/white" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:textAlignment="center"/>
-<ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/refresh" android:layout_alignParentEnd="true" android:layout_marginEnd="30dp" android:layout_centerVertical="true"/>
-</RelativeLayout>
-<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<!-- cgpa -->
-<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:text="Let Explore your scores ->" android:fontFamily="serif-monospace" android:textSize="15sp" android:textColor="#171616" android:textStyle="bold"/>
-<!--  CGPA  -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CGPA" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/white" android:textSize="30sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/cgpa_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/white" android:textSize="30sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/cgpa_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="@color/white" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="10dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/cgpa_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:padding="0dp" android:background="@drawable/box3" android:textColor="@color/l_blue" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-<!-- semesters -->
-<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:text="Semesters ->" android:fontFamily="serif-monospace" android:textSize="15sp" android:textColor="#171616" android:textStyle="bold"/>
-<!-- 1sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem1_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem1_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem1_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 2sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 2" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem2_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem2_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem2_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 3sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 3" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem3_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem3_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem3_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 4sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 4" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem4_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem4_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem4_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 5sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 5" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem5_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem5_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem5_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 6sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 6" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem6_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem6_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem6_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 7sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 7" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem7_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem7_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem7_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-<!-- 8sem -->
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
-<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/box1" android:layout_margin="2dp">
-<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Semester 8" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentStart="true" android:layout_marginStart="25dp"/>
-<TextView android:id="@+id/sem8_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.1" android:textStyle="bold" android:fontFamily="@font/lora" android:textColor="@color/black" android:textSize="20sp" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp"/>
-</RelativeLayout>
-<TextView android:id="@+id/sem8_quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Don't you have an other works than studies!" android:textColor="#222020" android:fontFamily="serif-monospace" android:textSize="12sp" android:layout_marginStart="25dp" android:layout_marginTop="8dp"/>
-<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="15dp">
-<Button android:id="@+id/sem8_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:fontFamily="serif-monospace" android:background="@drawable/box4" android:textColor="@color/white" android:layout_alignParentEnd="true" android:layout_marginEnd="25dp" android:layout_marginStart="25dp"/>
-</RelativeLayout>
-</LinearLayout>
-</FrameLayout>
-</FrameLayout>
-</LinearLayout>
-</ScrollView>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/l_blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/l_blue">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo"
+            android:background="@drawable/logo_g"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"/>
+
+        <!--Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/short_baby"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/refresh"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--cgpa-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="Let Explore your scores ->"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="#171616"
+                android:textStyle="bold"/>
+
+            <!-- CGPA -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CGPA"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/lora"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"/>
+
+                        <TextView
+                            android:id="@+id/cgpa_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9.1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/lora"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="25dp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cgpa_quote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Don't you have an other works than studies!"
+                        android:textColor="@color/white"
+                        android:fontFamily="serif-monospace"
+                        android:textSize="12sp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp">
+
+                        <Button
+                            android:id="@+id/cgpa_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Explore"
+                            android:fontFamily="serif-monospace"
+                            android:padding="0dp"
+                            android:background="@drawable/box3"
+                            android:textColor="@color/l_blue"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginStart="25dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <!--semesters-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:text="Semesters ->"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="#171616"
+                android:textStyle="bold"/>
+
+            <!--1sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem1_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem1_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem1_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+            <!--2sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 2"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem2_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem2_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem2_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--3sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 3"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem3_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem3_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem3_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--4sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 4"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem4_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem4_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem4_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--5sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 5"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem5_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem5_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem5_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--6sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 6"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem6_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem6_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem6_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--7sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 7"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem7_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem7_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem7_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!--8sem-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/box1"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Semester 8"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="25dp"/>
+
+                            <TextView
+                                android:id="@+id/sem8_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9.1"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/lora"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/sem8_quote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Don't you have an other works than studies!"
+                            android:textColor="#222020"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="12sp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="15dp">
+
+                            <Button
+                                android:id="@+id/sem8_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Explore"
+                                android:fontFamily="serif-monospace"
+                                android:background="@drawable/box4"
+                                android:textColor="@color/white"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="25dp"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>
