@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GradeUp</string>
+    <string name="dept_drop">Department</string>
+    <string name="dept_reg">Regulation</string>
+</resources>
