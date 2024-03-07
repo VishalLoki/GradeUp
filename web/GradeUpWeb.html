@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vishy Loki Studios">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <title>GradeUp</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            background-color: #3056DD;
+        }
+        @font-face{
+            font-family: 'lora';
+            src: url(https://vishalloki.github.io/GradeUp/final/app/res/font/short_baby.ttf) format('truetype');
+        }
+        @font-face{
+            font-family: 'symbiosis';
+            src: url(https://vishylokistudio.github.io/GCT-Edify/symb.ttf) format('truetype');
+        }
+        @font-face{
+            font-family: 'beck';
+            src: url(https://vishylokistudio.github.io/GCT-Edify/beck.ttf) format('truetype');
+        }
+        @font-face{
+            font-family: 'brown';
+            src: url(https://vishylokistudio.github.io/GCT-Edify/brown.ttf) format('truetype');
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+        }
+        #logo h1{
+            font-family:'lora', sans-serif;
+            font-size: 40px;
+            color:#fff;
+        }
+        #box{
+            max-height: fit-content;
+            max-width: fit-content;
+            background-color: #fff;
+            border-radius: 15px;
+            margin-bottom: 50px;
+        }
+        #box1{
+            padding-top: 20px;
+            padding-left: 10px;
+            border: 2px solid #fff;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+        }
+        #box1 img{
+            width:70px;
+            height:70px;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        #text_name{
+            padding-top: 20px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        #name{
+            color: #3056DD;
+            font-family:'lora';
+            font-size: 28px;
+            font-weight: bold;
+            padding: 0;
+        }
+        #name2{
+            color: #3056DD;
+            margin-top: 5px;
+            font-size: 10px;
+            padding: 0;
+        }
+        #download{
+            display: flex;
+            justify-content: center;
+            padding:20px;
+            padding-left: 130px;
+            padding-right: 30px;
+        }
+        #download a {
+            text-decoration: none;
+            font-family: 'lora';
+            font-size: 25px;
+            background-color: #3056DD;
+            color:#fff;
+            border:1px solid #3056DD;
+            padding:15px;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 10px;
+        }
+        #box2{
+           color: #3056DD;
+           display: flex; 
+           padding-left: 50px;
+           font-family: 'brown';
+        }
+        span{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bold;
+            font-family: 'brown';
+        }
+        #box3{
+            padding:30px;
+        }
+        #swiper{
+            width:540px;
+            height:310px;
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            scroll-snap-type: x mandatory;
+        }
+        #swiper img{
+            padding-right: 10px;
+            width:200px;
+            height:310px;
+        }
+        #swiper::-webkit-scrollbar {
+            display: none;
+        }
+        #review{
+            color: #3056DD;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+            padding-top: 10px;
+        }
+        #review i{
+            margin-top: 3px;
+            height:12px;
+            width:12px;
+        }
+        #box4{
+            display: flex;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 600px) {
+            #box1 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            #text_name {
+                text-align: center;
+            }
+
+            #download {
+                padding: 20px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            #download a {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            #box2 {
+                color: #3056DD;
+                padding-left: 20px;
+                font-size: 14px;
+            }
+
+            #swiper {
+                width: 100%;
+            }
+
+            #swiper img {
+                width: 100%;
+                height: auto;
+                padding-right: 10px;
+            }
+
+            #review {
+                color: #3056DD;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <h1>GradeUp</h1>
+    </div>
+    <div id="box4">
+    <div id="box">
+        <div id="box1">
+            <img src="https://vishalloki.github.io/GradeUp/web/gradeup_logo.png">
+            <div id="text_name">
+                <div id="name">GradeUp</div>
+                <div id="name2">version 1.0</div>
+            </div>
+            <div id="download">
+                <a href="https://drive.google.com/uc?id=1xyagCJ8I_f8Q3e_9hoDu6tQOBqLnvYgk&export=download" download>
+                    Download
+                  </a>                                   
+            </div> 
+        </div>
+        <div id="box2">
+            created by <span>Vishy Loki Studios</span>
+        </div>
+        <div id="box3">
+            <div id="swiper">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_150755.png" alt="photo1">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_151146.png" alt="photo5">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_151209.png" alt="photo6">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_151231.png" alt="photo7">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_151255.png" alt="photo8">
+                <img src="https://vishalloki.github.io/GradeUp/final/screenshots/Screenshot_20240224_151308.png" alt="photo9">
+            </div>
+        </div>
+        <div id="review">
+            <span>Contact me on </span>
+            <a href="https://www.instagram.com/loki_var_007/#"><i class="fa-brands fa-instagram" style="color: #3056DD;"></i></a>
+            <span>and</span>
+            <a href="mailto:vishalnarayanan210803@gmail.com"><i class="fa-regular fa-envelope" style=color: #3056DD;"></i></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
