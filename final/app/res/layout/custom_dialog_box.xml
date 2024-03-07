@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cream">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box1"
+            android:layout_margin="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DELETE SUBJECT"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/lora"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sem1_quote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#222020"
+                    android:text="Are you sure want to delete this Subject!?"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="14sp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="8dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="15dp">
+
+                    <Button
+                        android:id="@+id/can_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cancel"
+                        android:fontFamily="serif-monospace"
+                        android:background="@drawable/plus_bg"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="55dp"/>
+
+                    <Button
+                        android:id="@+id/del_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:fontFamily="serif-monospace"
+                        android:background="@drawable/box4"
+                        android:textColor="@color/white"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="55dp"
+                        android:layout_marginStart="25dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

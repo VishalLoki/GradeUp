@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".plus_sem">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/l_blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/l_blue">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"/>
+
+        <!--Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/short_baby"
+            android:textSize="21sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:textColor="@color/l_blue"
+        android:textSize="25sp"
+        android:textStyle="bold|normal"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"/>
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/name"
+        android:background="@drawable/plus_bg"
+        android:drawablePadding="20dp"
+        android:hint="Subject Name"
+        android:maxLength="10"
+        android:padding="20dp"
+        android:textColor="@color/l_blue"
+        android:textColorHint="@color/l_blue" />
+
+    <EditText
+        android:id="@+id/scredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/plus_bg"
+        android:drawablePadding="20dp"
+        android:hint="Credit"
+        android:maxLength="10"
+        android:padding="20dp"
+        android:textColor="@color/l_blue"
+        android:textColorHint="@color/l_blue" />
+
+    <EditText
+        android:id="@+id/sgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/plus_bg"
+        android:drawablePadding="20dp"
+        android:hint="Grade"
+        android:maxLength="10"
+        android:padding="20dp"
+        android:textColor="@color/l_blue"
+        android:textColorHint="@color/l_blue" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:shadowColor="#222222"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box4"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
